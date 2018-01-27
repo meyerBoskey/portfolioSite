@@ -3,6 +3,9 @@
   "name": "startbootstrap-freelancer",
   "version": "4.0.0-beta.2",
   "description": "A freelancer portfolio HTML theme for Bootstrap.",
+  "scripts": {
+    "start": "node server"
+  },
   "keywords": [
     "css",
     "sass",
@@ -30,16 +33,14 @@
     "font-awesome": "4.7.0",
     "jquery": "^3.2.1",
     "jquery.easing": "^1.4.1",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "body-parser": "^1.18.2",
+    "exphbs": "^1.1.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
     "browser-sync": "2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "3.9.0",
-    "gulp-filter": "^5.0.1",
-    "gulp-header": "1.8.9",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "3.0.0"
+    "gulp": "^3.9.1"
   }
 }
