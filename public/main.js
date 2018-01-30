@@ -122,11 +122,28 @@ function getInputVal(id){
 
 // Save mesage to firebase
 function saveMessage(name, email, phone, message){
-    var newMessageRef = messagesRef.push();
-    newMessageRef.set({
-        name: name,
-        email: email,
-        phone: phone,
-        message: message
+    let url = "http://localhost:5000/contact";
+    fetch(url, {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        })
+    }).then(res => {
+        console.log(res);
+    }).catch(err => {
+        console.log(err);
     });
+    // var newMessageRef = messagesRef.push();
+    // newMessageRef.set({
+    //     name: name,
+    //     email: email,
+    //     phone: phone,
+    //     message: message
+    // });
 }
