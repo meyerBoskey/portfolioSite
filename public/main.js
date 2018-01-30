@@ -122,7 +122,7 @@ function getInputVal(id){
 
 // Save mesage to firebase
 function saveMessage(name, email, phone, message){
-    let url = "https://cullen.herokuapp.com//contact";
+    let url = "https://cullen.herokuapp.com/contact";
     fetch(url, {
         method: 'post',
         headers: {
