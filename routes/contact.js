@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const nodemailer = require('nodemailer');
-const keys = require('./config/keys');
+const keys = require('../config/keys');
 
 router.post('/', (req, res) => {
     const output = `
